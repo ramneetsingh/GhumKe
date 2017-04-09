@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.ramne.ghumke.place">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="35sp"
+        android:textColor="@color/maroon"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:hint="Enter The Title Of Your Place"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/img"
+        android:layout_below="@+id/title"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"
+        />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:id="@+id/cam"
+        android:padding="5dp"
+        android:background="@drawable/cam"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/descpt"
+        android:hint="Enter The Description Of Your Place"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/cam"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:maxLines="10"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:layout_below="@+id/descpt"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:background="@drawable/draw"
+            />
+    </RelativeLayout>
+</ScrollView>
