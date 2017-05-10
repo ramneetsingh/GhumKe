@@ -51,46 +51,12 @@ public class Cities extends AppCompatActivity {
                                     int position, long id) {
                 Toast.makeText(Cities.this, "You Clicked at " +cities[+ position], Toast.LENGTH_LONG).show();
                 Intent intent=new Intent(Cities.this,Citydescription.class);
-                if(position==6)
+                if(position>=0 && position <=7)
                 {
-                    intent.putExtra("lucknow",7);
+                    intent.putExtra("lucknow",position+1);
                     startActivity(intent);
                 }
-                if(position==0)
-                {
-                    intent.putExtra("lucknow",1);
-                    startActivity(intent);
-                }
-                if(position==1)
-                {
-                    intent.putExtra("lucknow",2);
-                    startActivity(intent);
-                }
-                if(position==2)
-                {
-                    intent.putExtra("lucknow",3);
-                    startActivity(intent);
-                }
-                if(position==3)
-                {
-                    intent.putExtra("lucknow",4);
-                    startActivity(intent);
-                }
-                if(position==4)
-                {
-                    intent.putExtra("lucknow",5);
-                    startActivity(intent);
-                }
-                if(position==5)
-                {
-                    intent.putExtra("lucknow",6);
-                    startActivity(intent);
-                }
-                if(position==7)
-                {
-                    intent.putExtra("lucknow",8);
-                    startActivity(intent);
-                }
+
                 if(position==8)
                 {
                     Intent i=new Intent(Cities.this,place.class);
