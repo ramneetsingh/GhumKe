@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ramne.ghumke">
-    <uses-feature android:name="android.hardware.camera"></uses-feature>
+
+    <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -25,11 +32,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Cities" />
+        <activity android:name=".CitiesGrid" />
         <activity android:name=".description.Citydescription" />
         <activity android:name=".description.Cityimg" />
         <activity android:name=".description.Cityplaces" />
-        <activity android:name=".place"></activity>
+        <activity android:name=".AddPlace" />
+        <activity
+            android:name=".CityImages.Activities.CityImageActivity"
+            android:label="@string/title_activity_city_image"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

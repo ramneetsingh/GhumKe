@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.ramne.ghumke.CityImages.Activities.CityImageActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     String uname;
@@ -30,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
               uname=username.getText().toString();
               pswd=password.getText().toString();
 
-                if(uname.equals("user123@example.com") && pswd.equals("User@1234"))
+                if(uname.equals("") && pswd.equals(""))
                 {
-                    Intent intent=new Intent(MainActivity.this,Cities.class);
+                    Intent intent=new Intent(MainActivity.this,CityImageActivity.class);
                     startActivity(intent);
                     Toast.makeText(getApplicationContext(),"Successfully logged in",
                             Toast.LENGTH_LONG).show();

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.example.ramne.ghumke.description.Citydescription;
 
-public class Cities extends AppCompatActivity {
+public class CitiesGrid extends AppCompatActivity {
 
     GridView grid;
     String[] cities = {
@@ -41,7 +41,7 @@ public class Cities extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cities);
 
-        CustomGrid adapter = new CustomGrid(Cities.this,cities,imageId);
+        CustomGrid adapter = new CustomGrid(CitiesGrid.this,cities,imageId);
         grid=(GridView)findViewById(R.id.grid1);
         grid.setAdapter(adapter);
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -49,8 +49,8 @@ public class Cities extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(Cities.this, "You Clicked at " +cities[+ position], Toast.LENGTH_LONG).show();
-                Intent intent=new Intent(Cities.this,Citydescription.class);
+                Toast.makeText(CitiesGrid.this, "You Clicked at " +cities[+ position], Toast.LENGTH_LONG).show();
+                Intent intent=new Intent(CitiesGrid.this,Citydescription.class);
                 if(position>=0 && position <=7)
                 {
                     intent.putExtra("lucknow",position+1);
@@ -59,7 +59,7 @@ public class Cities extends AppCompatActivity {
 
                 if(position==8)
                 {
-                    Intent i=new Intent(Cities.this,place.class);
+                    Intent i=new Intent(CitiesGrid.this,AddPlace.class);
                     startActivity(i);
                 }
 

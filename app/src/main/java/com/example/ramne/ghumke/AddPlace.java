@@ -20,7 +20,7 @@ import android.widget.Toast;
 import java.io.FileDescriptor;
 import java.io.IOException;
 
-public class place extends Activity {
+public class AddPlace extends Activity {
     private Uri mImageCaptureUri;
     private ImageView mImageView;
 

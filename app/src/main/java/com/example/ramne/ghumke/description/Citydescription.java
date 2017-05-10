@@ -95,46 +95,9 @@ public class Citydescription extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Citydescription.this,Cityimg.class);
-               if(code==7)
-               {
-                   intent.putExtra("lucknow",7);
-                   startActivity(intent);
-               } if(code==1)
-                {
-                    intent.putExtra("lucknow",1);
-                    startActivity(intent);
-                }
-                if(code==2)
-                {
-                    intent.putExtra("lucknow",2);
-                    startActivity(intent);
-                }
-                if(code==3)
-                {
-                    intent.putExtra("lucknow",3);
-                    startActivity(intent);
-                }
-                if(code==4)
-                {
-                    intent.putExtra("lucknow",4);
-                    startActivity(intent);
-                }
-                if(code==5)
-                {
-                    intent.putExtra("lucknow",5);
-                    startActivity(intent);
-                }
-                if(code==6)
-                {
-                    intent.putExtra("lucknow",6);
-                    startActivity(intent);
-                }
-                if(code==8)
-                {
-                    intent.putExtra("lucknow",8);
-                    startActivity(intent);
-                }
 
+                   intent.putExtra("lucknow",code);
+                   startActivity(intent);
             }
         });
 
@@ -142,45 +105,9 @@ public class Citydescription extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Citydescription.this,Cityplaces.class);
-                if(code==7)
-                {
-                    intent.putExtra("lucknow",7);
+                    intent.putExtra("lucknow",code);
                     startActivity(intent);
-                } if(code==1)
-                {
-                    intent.putExtra("lucknow",1);
-                    startActivity(intent);
-                }
-                if(code==2)
-                {
-                    intent.putExtra("lucknow",2);
-                    startActivity(intent);
-                }
-                if(code==3)
-                {
-                    intent.putExtra("lucknow",3);
-                    startActivity(intent);
-                }
-                if(code==4)
-                {
-                    intent.putExtra("lucknow",4);
-                    startActivity(intent);
-                }
-                if(code==5)
-                {
-                    intent.putExtra("lucknow",5);
-                    startActivity(intent);
-                }
-                if(code==6)
-                {
-                    intent.putExtra("lucknow",6);
-                    startActivity(intent);
-                }
-                if(code==8)
-                {
-                    intent.putExtra("lucknow",8);
-                    startActivity(intent);
-                }
+
             }
         });
     }
